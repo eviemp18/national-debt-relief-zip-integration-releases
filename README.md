@@ -22,10 +22,10 @@ Runtime dependencies are bundled into `NDR Zip Tool.exe` during the PyInstaller 
 
 ## GUI Buttons
 
-- **Run Verification**: runs `verify_budget.py`.
-- **Update Vendor Names**: launches interactive vendor name matching and, when not in Development Mode, sends selected Zip PATCH requests via `name_parser.py`.
+- **Run Verification**: Reconciles Zip spend to finance actuals
+- **Update Vendor Names**: launches interactive vendor name matching and, when not in Development Mode, sends selected Zip PATCH requests to update Zip names.
 - **Update vendor_list.txt**: when checked, refreshes `vendor_list.txt` from Zip before processing vendor name matches.
-- **Add Budget Actuals**: reads actuals from the workbook and synchronizes them to Zip via `budget_actual.py`.
+- **Add Budget Actuals**: reads finance actuals from the workbook and synchronizes them to Zip 
 - **Exclude Vendors from vendor_exclusion.txt**: when checked, skips vendors listed in `vendor_exclusion.txt`.
 - **Development Mode**: when enabled, the app runs selected workflows with `--debug` and `--dry-run` where available, and avoids passing `--apply` for vendor-name updates.
 - **Top vendor count**: optional number of vendors to include in the Top Vendors analysis. Leave blank to skip the Top Vendors sheet update and Summary top vendor bar chart.
